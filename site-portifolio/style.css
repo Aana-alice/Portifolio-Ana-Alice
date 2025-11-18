@@ -133,13 +133,11 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* NÃO DEU CERTOOOOOOOOOOO
-.sobre-texto {
-    color: var(--destaque-pessego); /* Exemplo: muda para #DFB6B2 (rosa claro). Substitua por qualquer cor da paleta ou outra que preferir. 
-    font-size: 1.1rem; /* Ajuste opcional para tamanho 
-    line-height: 1.7; /* Ajuste opcional para espaçamento 
-} */
+#sobre {
+    color: #eed6d3; 
+    font-size: 1.1rem; 
+    line-height: 1.7; 
+} 
 
 .container h2 {
     text-align: center;
@@ -231,6 +229,15 @@ section {
 }
 
 /* Contato */
+
+#contato{ 
+    color: #eed6d3;  
+    font-size: 1.1rem;
+    line-height: 1.7; 
+    text-align: center;
+
+
+}
 form {
     display: flex;
     flex-direction: column;
@@ -282,16 +289,18 @@ footer {
 }
 
 /* Responsividade */
+
+/*pra mobile*/
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none ;
         flex-direction: column;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background: var(--fundo-escuro);
-        padding: 1rem;
+       padding: 1rem; /*padding: 10px 0;*/
     }
 
     .nav-links.active {
@@ -310,3 +319,12 @@ footer {
         font-size: 2rem;
     }
 }
+
+@media (min-width: 769px) {
+        .menu-toggle {
+            display: none; /* Esconde o botão em desktop */
+        }
+        .nav-links {
+            display: flex; /* Sempre visível */
+        }
+    }

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Ana Alice</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -14,10 +16,10 @@
     <header>
         <nav>
             <div class="logo"><i class="fas fa-code"></i> AMatias</div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+               <!-- <li><a href="#projetos">Projetos</a></li>-->
                 <li><a href="#contato">Contato</a></li>
             </ul>
             <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
@@ -39,11 +41,11 @@
 Meu foco é ajudar pessoas e pequenos negócios a terem uma presença profissional na internet, com sites rápidos, bem estruturados e personalizados para cada necessidade.
 
 Gosto de entregar projetos limpos, objetivos e com excelente experiência de uso — sempre priorizando boas práticas, organização e comunicação clara durante todo o processo.</p>
-        <!-- trocar essa foto feia aq--><img src="img/foto perfil linkedin - Copia.jpg" alt="AMatias" class="profile-img">
+        <!-- adicionar foto--><img src="" alt="AMatias" class="profile-img">
         </div>
     </section>
 
-    <section id="habilidades">
+    <!--<section id="habilidades">
         <div class="container">
             <h2><i class="fas fa-tools"></i> Habilidades</h2>
             <div class="skills-grid">
@@ -55,9 +57,23 @@ Gosto de entregar projetos limpos, objetivos e com excelente experiência de uso
                 <div class="skill"><i class="fas fa-handshake"></i> Freelance & Consultoria</div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section id="projetos">
+    <section id="habilidades">
+    <div class="container">
+        <h2><i class="fas fa-tools"></i> Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill"><i class="fab fa-html5"></i> Criação de Sites Atraentes e Funcionais</div>
+            <div class="skill"><i class="fab fa-js-square"></i> Interatividade e Dinamismo</div>
+            <div class="skill"><i class="fab fa-git-alt"></i> Controle Eficiente de Projetos e Versões</div>
+            <div class="skill"><i class="fas fa-mobile-alt"></i> Sites que Funcionam Perfeitamente em Qualquer Dispositivo</div>
+            <div class="skill"><i class="fas fa-cogs"></i> Manutenção e Atualização de Sites</div>
+            <div class="skill"><i class="fas fa-handshake"></i> Atendimento Personalizado para Seu Negócio</div>
+        </div>
+    </div>
+</section>
+
+    <!--<section id="projetos">
         <div class="container">
             <h2><i class="fas fa-project-diagram"></i> Projetos</h2>
             <div class="projects-grid">
@@ -73,25 +89,36 @@ Gosto de entregar projetos limpos, objetivos e com excelente experiência de uso
                     <p>Um pequeno sistema de gerenciamento. Tecnologias: JS, HTML.</p>
                     <a href="https://github.com/seu-usuario/projeto2" target="_blank"><i class="fab fa-github"></i> Ver no GitHub</a>
                 </div>
-                <!-- Adicione mais projetos aqui -->
+                // Adicionar projetos aqui 
             </div>
         </div>
     </section>
-
+-->
     <section id="contato">
         <div class="container">
-            <h2><i class="fas fa-envelope"></i> Contato</h2>
-            <p>Pronto para conversar sobre seu projeto? Envie uma mensagem!</p>
-            <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+           <h2><i class="fas fa-envelope"></i> Contato</h2>
+            <p>Vamos conversar sobre seu projeto? Envie uma mensagem abaixo!!</p>
+            <!-- <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
                 <input type="text" name="nome" placeholder="Seu Nome" required>
                 <input type="email" name="email" placeholder="Seu Email" required>
                 <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
                 <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Enviar</button>
-            </form>
+            </form>-->
+            <!--<div class="social-links">
+                <a href="https://github.com/Aana-alice" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ana-alice-azevedo-matias-075125349/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ana.alice.am?igsh=cDIyaGxrdmE4OG5o&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>-->
+        </div>
             <div class="social-links">
-                <a href="https://github.com/seu-usuario" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/seu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
+                <a href="https://www.instagram.com/ana.alice.am?igsh=cDIyaGxrdmE4OG5o&utm_source=qr" target="_blank" title="Instagram (envie uma DM!)"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/Aana-alice" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/ana-alice-azevedo-matias-075125349/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    
+
+    <a href="mailto:seuemail@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+</div>
+
         </div>
     </section>
 

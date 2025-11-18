@@ -1,9 +1,12 @@
 // Menu toggle para mobile
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+document.getElementById('menu-toggle').addEventListener('click', function(e) {
+    const navLinks = document.getElementById('nav-links');
+    console.log('Menu toggle clicado'); // Debug
+    console.log('navLinks:', navLinks); // Debug
+    if (navLinks) {
+        navLinks.classList.toggle('active');
+        console.log('Classe active toggled'); // Debug
+    }
 });
 
 // Animações com ScrollReveal
