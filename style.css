@@ -41,6 +41,7 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    position:relative;
 }
 
 .logo {
@@ -295,11 +296,11 @@ footer {
     .nav-links {
         display: none ;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         top: 100%;
         left: 0;
         width: 100%;
-        background: var(--fundo-escuro);
+        background: var(--secao-profunda);
        padding: 1rem; /*padding: 10px 0;*/
     }
 
