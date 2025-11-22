@@ -323,9 +323,9 @@ footer {
 
 @media (min-width: 769px) {
         .menu-toggle {
-            display: none; /* Esconde o botão em desktop */
+            display: none; 
         }
         .nav-links {
-            display: flex; /* Sempre visível */
+            display: flex;
         }
     }
